@@ -78,4 +78,36 @@ python act/inference.py --ckpt_dir ~/train0314/
 
 # Contact Us
 
-![Contact](./collect_data/docs/1.jpg)
+# Contact Information
+
+- **Sales Email:** [Sales@agilex.ai](mailto:Sales@agilex.ai)
+- **Phone Numbers:**
+  - 0755-86165015 (Monday to Friday)
+  - 17796377363 (Weekends and Holidays)
+
+---
+
+## WeChat
+
+- **Scan QR Code to Add Friends:**
+  - 松灵机器人 (AgileX Robotics)
+  - 售后服务 (After-Sales Service)
+
+![WeChat QR Codes](./collect_data/docs/1.jpg)  <!-- Replace with the actual path to the QR code images -->
+
+---
+
+# Addresses
+
+- **Dongguan Office Address:**
+  Dongguan City, Songshan Lake Small and Medium-Sized Enterprise Venture Park, Building 10, Floor 1
+
+- **Shenzhen Office Address:**
+  Shenzhen City, Nanshan District, Zhigu Industrial Park, Building A3, Floor 9
+
+---
+
+## Additional Emails
+
+- **Marketing Email:** [Marketing@agilex.ai](mailto:Marketing@agilex.ai)
+- **HR Email:** [hr@agilex.ai](mailto:hr@agilex.ai)
