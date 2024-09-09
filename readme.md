@@ -93,9 +93,7 @@ python act/inference.py --ckpt_dir ~/train0314/
   - 松灵机器人 (AgileX Robotics)
   - 售后服务 (After-Sales Service)
 
-![WeChat QR Codes](./collect_data/docs/1.jpg)  <!-- Replace with the actual path to the QR code images -->
 
----
 
 # Addresses
 
