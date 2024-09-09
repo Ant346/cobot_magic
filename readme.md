@@ -1,15 +1,14 @@
 # mobile-aloha
 
+## 1. Environment Setup
 
-# 1 环境配置
-
-1. 下载cobot-magic工程
-~~~python
+1. Download the cobot-magic project:
+~~~bash
 git clone https://github.com/agilexrobotics/cobot_magic.git
 ~~~
 
-2. 编译
-~~~python
+2. Compile:
+~~~bash
 cd cobot_magic/remote_control
 ./tools/build.sh
 
@@ -18,19 +17,19 @@ catkin_make
 ~~~
 
 
-2. 测试
+## 2. Testing
 
-~~~python
-# 1 setup rule
+~~~bash
+# 1. Setup rule
 ls /dev/ttyACM*
 
 udevadm info -a -n /dev/ttyACM* | grep serial -m 1
 
 sudo vim /etc/udev/rules.d/arx_can.rules
 
-sudo udevadm control --reload && sudo  udevadm trigger
+sudo udevadm control --reload && sudo udevadm trigger
 
-# 2 start remote arm
+# 2. Start remote arm
 cd remote_control
 ./tools/can.sh
 
@@ -42,40 +41,41 @@ roslaunch arm_control arx5v.launch
 ~~~
 
 
-# 3 采集数据
+## 3. Data Collection
 
-~~~python
-# 1 启动roscore
+~~~bash
+# 1. Start roscore
 roscore
 
-# 2 启动机器臂与相机
+# 2. Start the robotic arm and camera
 ./tools/remote.sh
 
-## 3 采集数据
+# 3. Collect data
 python collect_data.py --max_timesteps 500 --dataset_dir ./data --episode_idx 0
 ~~~
 
-# 4 模型训练推理
 
-~~~python
-# 1 激活虚拟环境
+## 4. Model Training and Inference
+
+~~~bash
+# 1. Activate virtual environment
 conda activate aloha
 
-# 2 训练
+# 2. Training
 python act/train.py --dataset_dir ~/data0314/ --ckpt_dir ~/train0314/ --batch_size 4 --num_epochs 3000
 
-# 3 推理
-## 3.1 只启动从臂
+# 3. Inference
+## 3.1 Start the secondary arm only
 cd remote_control
 ./tools/puppet.sh
 
-## 3.2 启动推理代码
+## 3.2 Start inference code
 python act/inference.py --ckpt_dir ~/train0314/
 ~~~
 
+
 ---
 
-# 联系我们
+# Contact Us
 
-![](./collect_data/docs/1.jpg)
-
+![Contact](./collect_data/docs/1.jpg)
